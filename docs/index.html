@@ -7,6 +7,7 @@
 <!--
 function openwin() {
   window.open ("index.html")
+  window.focus();
 }
 -->
 </SCRIPT>
@@ -925,12 +926,4 @@ function openwin() {
         <button type="button" onclick="promptStuff()">CLICK ME</button>
     </center>
 </body>
-
-<script type="text/javascript">
-function endFunc() {
-    if ((event.clientX + document.body.scrollLeft) < document.body.clientWidth && (event.clientY + document.body.scrollTop < 0) || event.altKey)
-    { window.event.returnValue = "STAY OR DIE!"; }
-}
-</script>
-
 </html>
