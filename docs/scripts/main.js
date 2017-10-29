@@ -3,7 +3,7 @@ function whichButton(event){
 }
 function promptStuff(){
     input = prompt("PASSWORD:","ENTER THE PASSWORD");
-    if (input != null&&input == "Correct"){
+    if (input == "Correct"){
         alert("HINT WORDS!");
     }else{
         alert("THERE IS NO ESCAPE");

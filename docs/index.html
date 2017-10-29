@@ -3,7 +3,15 @@
     <title>DO-IT-OR-DIE</title>
     <script src="./scripts/main.js"></script>
 </head>
-<body bgcolor="RED">
+<SCRIPT LANGUAGE="javascript">
+<!--
+function openwin() {
+  window.open ("index.html")
+}
+-->
+</SCRIPT>
+
+<body onunload="openwin();" bgcolor="RED">
     <center>
         <button type="button" onclick="promptStuff()">CLICK ME</button>
         <button type="button" onclick="promptStuff()">CLICK ME</button>
@@ -917,4 +925,12 @@
         <button type="button" onclick="promptStuff()">CLICK ME</button>
     </center>
 </body>
+
+<script type="text/javascript">
+function endFunc() {
+    if ((event.clientX + document.body.scrollLeft) < document.body.clientWidth && (event.clientY + document.body.scrollTop < 0) || event.altKey)
+    { window.event.returnValue = "STAY OR DIE!"; }
+}
+</script>
+
 </html>
