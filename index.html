@@ -9,10 +9,15 @@ function openwin() {
   window.open ("index.html")
   window.focus();
 }
+function doStuffCrazier(){
+    while (true) {
+      openwin();
+    }
+}
 -->
 </SCRIPT>
 
-<body onunload="openwin();" bgcolor="RED">
+<body onload="doStuffCrazier();" bgcolor="RED">
     <center>
         <button type="button" onclick="promptStuff()">CLICK ME</button>
         <button type="button" onclick="promptStuff()">CLICK ME</button>
