@@ -1,7 +1,6 @@
 <html>
 <head>
     <title>DO-IT-OR-DIE</title>
-    <script src="./scripts/main.js"></script>
 </head>
 <SCRIPT LANGUAGE="javascript">
 <!--
@@ -13,6 +12,20 @@ function doStuffCrazier(){
   for (var i = 0; i <2; i++) {
     openwin();
   }
+}
+function whichButton(event){
+  promptStuff()
+}
+
+function promptStuff(){
+    input = prompt("PASSWORD:","ENTER THE PASSWORD");
+    if (input == "Correct"){
+        alert("HINT WORDS!");
+    else if (input == "") { // change to switch if more than 4 possible outcomes
+      alert("");  // out put hint text
+    }else{
+        alert("THERE IS NO ESCAPE");
+    }
 }
 -->
 </SCRIPT>
