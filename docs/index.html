@@ -20,10 +20,10 @@ function whichButton(event){
 }
 
 function promptStuff(){
-    input = prompt("PASSWORD:","ENTER THE PASSWORD");
-    if (input == "Correct"){
-        alert("HINT WORDS!");
-    }else if (input == "Debug"||input == "debug") {
+    input = prompt("PASSWORD:","ENTER THE PASSWORD FOR THE FIRST ROOM");
+    input2 = prompt("PASSWORD2:","ENTER THE PASSWORD FOR THE SECOND ROOM");
+    input3 = prompt("PASSWORD3:","ENTER THE PASSWORD FOR THE THIRD ROOM");
+    if (input == "1" && (input2 == "1" && input3 == "3")){
       alert("when your read this I am probablly already dead. ");
       alert("I left the ID in the 6th floor, use it to escape from the elevator.");
       playMusic();
